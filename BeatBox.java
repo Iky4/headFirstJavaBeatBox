@@ -38,7 +38,6 @@ public class BeatBox {
 
     public void startUp(String name) {
         userName = name;
-        // open connection to the server
         try {
             Socket socket = new Socket("127.0.0.1", 4242);
             out = new ObjectOutputStream(socket.getOutputStream());
